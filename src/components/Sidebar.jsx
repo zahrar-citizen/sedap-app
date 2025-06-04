@@ -1,5 +1,5 @@
-import { RiCustomerServiceFill } from "react-icons/ri"; 
-import { MdStroller } from "react-icons/md"; 
+import { RiCustomerServiceFill } from "react-icons/ri";
+import { MdFastfood, MdStroller } from "react-icons/md";
 import { MdDashboard } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 
@@ -38,8 +38,8 @@ export default function Sidebar() {
                         <NavLink
                             id="menu-2"
                             to="/orders"
-                            className={menuClass}> 
-                            <MdStroller className="mr-4 text-xl"/>
+                            className={menuClass}>
+                            <MdStroller className="mr-4 text-xl" />
                             Orders
                         </NavLink>
                     </li>
@@ -50,6 +50,16 @@ export default function Sidebar() {
                             className={menuClass}>
                             <RiCustomerServiceFill className="mr-4 text-xl" />
                             Customers
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            id="menu-4"
+                            to="/products"
+                            className={menuClass}
+                        >
+                            <MdFastfood className="mr-4 text-xl" />
+                            Products
                         </NavLink>
                     </li>
                 </ul>
