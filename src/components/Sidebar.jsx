@@ -1,3 +1,4 @@
+import { CgNotes } from "react-icons/cg"; 
 import { RiCustomerServiceFill } from "react-icons/ri";
 import { MdFastfood, MdStroller } from "react-icons/md";
 import { MdDashboard } from "react-icons/md";
@@ -60,6 +61,16 @@ export default function Sidebar() {
                         >
                             <MdFastfood className="mr-4 text-xl" />
                             Products
+                        </NavLink>
+                    </li>
+                     <li>
+                        <NavLink
+                            id="menu-4"
+                            to="/notes"
+                            className={menuClass}
+                        >
+                            <CgNotes className="mr-4 text-xl" />
+                            Notes
                         </NavLink>
                     </li>
                 </ul>
